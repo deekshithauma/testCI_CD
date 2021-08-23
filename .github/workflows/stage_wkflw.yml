@@ -10,7 +10,7 @@ on:
 
     branches:
 
-      - dev
+      - stage
 
     paths:
 
@@ -62,9 +62,9 @@ jobs:
 
           SF_ROLE: ${{ secrets.SF_ROLE }}
 
-          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE_DEV }}
+          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE_STAGE }}
 
-          SF_DATABASE: ${{ secrets.SF_DATABASE_DEV }}
+          SF_DATABASE: ${{ secrets.SF_DATABASE_STAGE }}
 
           SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
 
